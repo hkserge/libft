@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 13:40:59 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/11/19 13:50:08 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/11/19 16:03:21 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ typedef struct		s_list
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
 size_t				ft_strlen(const char *str);
-
+int					ft_isalnum(int c);
+int					ft_isascii(int c);
 #endif
