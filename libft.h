@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 13:40:59 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/11/19 17:11:43 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/11/21 20:47:34 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,11 @@ int					ft_isdigit(int c);
 size_t				ft_strlen(const char *str);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
-int					isprint(int c);
+int					ft_isprint(int c);
+int					ft_toupper(int c);
+int					ft_tolower(int c);
+char				*ft_strchr(const char *s, int c);
+void				*ft_memset(void *s, int c, size_t n);
+void				ft_bzero(void *s, size_t n);
 
 #endif
