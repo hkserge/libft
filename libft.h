@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 13:40:59 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/11/21 20:47:34 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/11/22 16:53:36 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ int					ft_tolower(int c);
 char				*ft_strchr(const char *s, int c);
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
+void				*ft_memcpy(void *dest, const void *src, size_t n);
 
 #endif

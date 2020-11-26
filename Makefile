@@ -6,7 +6,7 @@
 #    By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/19 13:23:27 by khelegbe          #+#    #+#              #
-#    Updated: 2020/11/19 13:38:39 by khelegbe         ###   ########.fr        #
+#    Updated: 2020/11/26 13:03:22 by khelegbe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ all:		$(NAME)
 .c.o:
 			${CC} ${FLAGS} -I ${HEADERS} -c $< -o ${<:.c=.o}
 
-${NAME} :	${OBJECTS}
+$(NAME) :	${OBJECTS}
 			ar rc libft.a ${OBJECTS}
 
 clean:
