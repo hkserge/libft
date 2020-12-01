@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 13:40:59 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/01 16:48:35 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/01 17:28:44 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,6 @@ int					ft_memcmp(const void *s1, const void *s2, size_t n);
 char				*ft_strrchr(const char *s, int c);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 void				*ft_calloc(size_t nmemb, size_t size);
+int					ft_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif
