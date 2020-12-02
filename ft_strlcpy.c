@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/02 14:17:41 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/02 14:46:07 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/02 14:50:44 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 
+	if (!src || !dst)
+		return (0);
 	i = 0;
 	if (size)
 	{
