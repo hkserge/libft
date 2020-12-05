@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 09:42:25 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/05 18:30:35 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/05 18:34:28 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 {
-	int		i;
-	int		j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;
