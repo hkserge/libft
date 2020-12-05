@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 13:40:59 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/02 12:26:20 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/03 09:47:00 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,6 @@ void				*ft_calloc(size_t nmemb, size_t size);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_atoi(const char *nptr);
 size_t				ft_strlcpy(char *dst, const char *src, size_t size);
+char				*ft_strnstr(const char *s1, const char *s2, size_t len);
 
 #endif
