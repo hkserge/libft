@@ -6,11 +6,11 @@
 #    By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/19 13:23:27 by khelegbe          #+#    #+#              #
-#    Updated: 2020/11/26 13:03:22 by khelegbe         ###   ########.fr        #
+#    Updated: 2020/12/05 18:47:10 by khelegbe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC		= gcc
+CC		= clang
 
 FLAGS	= -Wall -Wextra -Werror
 
@@ -18,7 +18,7 @@ NAME	= libft.a
 
 SRCS	= $(wildcard *.c)
 
-HEADERS	= . 
+HEADERS	= .
 
 OBJECTS	= ${SRCS:.c=.o}
 
@@ -37,3 +37,5 @@ fclean:		clean
 			rm -rf $(NAME)
 
 re:			fclean all
+
+.PHONY:            all clean fclean re bonus
