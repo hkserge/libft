@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/07 17:15:00 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/08 17:18:54 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/08 20:55:18 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,10 @@ static char	*ft_new_str(const char *str, int start, int end)
 		size = (end - start) + 2;
 	if (!(tmp = malloc(sizeof(*str) * size)))
 		return (0);
-	ft_strlcpy(tmp, str + start, size);
+	if (end < start)
+		tmp[size] = '\0';
+	else
+		ft_strlcpy(tmp, str + start, size);
 	return (tmp);
 }
 
