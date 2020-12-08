@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/07 17:15:00 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/08 17:14:18 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/08 17:18:54 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	ft_check_set(char c, const char *set)
 static char	*ft_new_str(const char *str, int start, int end)
 {
 	char	*tmp;
-	int 	size;
+	int		size;
 
 	if (end <= start)
 		size = 2;
