@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/07 17:15:00 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/08 21:21:17 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/10 23:36:54 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,23 @@ static int	ft_check_set(const char c, const char *set)
 
 static char	*ft_new_str(const char *str, int start, int end)
 {
-	char	*tmp;
-	int		size;
+	char			*tmp;
+	unsigned int	i;
+	int				len;
 
-	if (end < start)
-		size = 1;
-	else
-		size = (end - start) + 2;
-	if (!(tmp = malloc(sizeof(char) * size)))
+	i = 0;
+	len = end - start + 1;
+	if (end < 0)
 		return (0);
-	if (end < start)
-		tmp[size] = '\0';
-	else
-		ft_strlcpy(tmp, (char *)str + start, size);
+	if (!(tmp = malloc(sizeof(char) * len + 1)))
+		return (0);
+	while (len > 0)
+	{
+		tmp[i] = str[start + i];
+		i++;
+		len--;
+	}
+	tmp[i] = '\0';
 	return (tmp);
 }
 
