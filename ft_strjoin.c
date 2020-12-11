@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 17:10:18 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/11 17:27:07 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/11 17:35:36 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	else if (!s2)
 		return ((char*)s1);
 	len = ft_strlen(s1) + ft_strlen(s2);
-	if (!(str = malloc(sizeof(char) * len)))
+	if (!(str = malloc(sizeof(char) * len + 1)))
 		return (0);
 	ft_strlcpy(str, s1, ft_strlen(s1) + 1);
 	ft_strlcpy(str + ft_strlen(s1), s2, ft_strlen(s2) + 1);
