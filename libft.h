@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 13:40:59 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/11 16:17:19 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/13 15:12:14 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,5 +54,6 @@ void				ft_putendl_fd(char *s, int fd);
 char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
+char				**ft_split(char const *s, char c);
 
 #endif
