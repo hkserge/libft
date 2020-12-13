@@ -6,22 +6,11 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/07 17:15:00 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/13 19:10:19 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/13 19:19:15 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_check_set(const char c, const char *set)
-{
-	while (*set)
-	{
-		if (*set == c)
-			return (1);
-		set++;
-	}
-	return (0);
-}
 
 char		*ft_strtrim(char const *s1, char const *set)
 {
