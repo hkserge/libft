@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 17:45:01 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/13 18:37:24 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/13 18:43:21 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,8 @@ char			**ft_split(char const *s, char c)
 	int		len;
 	size_t	j;
 
+	if (!s)
+		return (0);
 	i = 0;
 	len = ft_str_nb(s, c);
 	j = 0;
