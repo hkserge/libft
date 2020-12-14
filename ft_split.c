@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 17:45:01 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/14 18:15:14 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/14 18:29:40 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,16 @@ static char	*ft_get_next_str(char const *s, char c, size_t *i)
 	return (0);
 }
 
+static void	ft_clear_tab(char **str)
+{
+	while (*str)
+	{
+		free(*str);
+		str++;
+	}
+	free(str);
+}
+
 char		**ft_split(char const *s, char c)
 {
 	int		i;
@@ -82,12 +92,7 @@ char		**ft_split(char const *s, char c)
 	{
 		if (!(str[i] = ft_get_next_str(s, c, &j)))
 		{
-			while (*str)
-			{
-				free(*str);
-				str++;
-			}
-			free(str);
+			ft_clear_tab(str);
 			return (0);
 		}
 		i++;
