@@ -6,16 +6,16 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 17:45:01 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/13 18:43:21 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/14 18:10:20 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int ft_str_nb(const char *s, char c)
+static int	ft_str_nb(const char *s, char c)
 {
-	size_t i;
-	size_t nb_strs;
+	size_t	i;
+	size_t	nb_strs;
 
 	if (!s[0])
 		return (0);
@@ -39,10 +39,10 @@ static int ft_str_nb(const char *s, char c)
 	return (nb_strs);
 }
 
-static char *ft_get_next_str(char const *s, char c, size_t *i)
+static char	*ft_get_next_str(char const *s, char c, size_t *i)
 {
-	size_t end;
-	char *str;
+	size_t	end;
+	char	*str;
 
 	if (!s[0])
 		return (0);
@@ -64,19 +64,19 @@ static char *ft_get_next_str(char const *s, char c, size_t *i)
 	return (0);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	int i;
-	char **str;
-	int len;
-	size_t j;
+	int		i;
+	char	**str;
+	int		len;
+	size_t	j;
 
 	if (!s)
 		return (0);
 	i = 0;
 	len = ft_str_nb(s, c);
 	j = 0;
-	if (!(str = malloc(sizeof(char *) * len + 1)))
+	if (!(str = malloc(sizeof(char *) * (len + 1))))
 		return (0);
 	while (i < len)
 	{
