@@ -6,7 +6,7 @@
 /*   By: khelegbe <khelegbe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 18:22:40 by khelegbe          #+#    #+#             */
-/*   Updated: 2020/12/15 18:43:58 by khelegbe         ###   ########.fr       */
+/*   Updated: 2020/12/15 18:49:08 by khelegbe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,9 @@ char			*ft_itoa(int n)
 	if (!(dest = malloc(sizeof(char) * 1)))
 		return (0);
 	if (nb == -2147483648)
-		return (dest = ft_strjoin(dest, "-2147483648"));
+		return (ft_strdup("-2147483648"));
 	if (nb == 2147483647)
-		return (dest = ft_strjoin(dest, "2147483647"));
+		return (ft_strdup("2147483647"));
 	ft_strlcpy(dest, "", 2);
 	if (nb == 0)
 		dest = ft_strjoin(dest, "0");
